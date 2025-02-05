@@ -269,7 +269,11 @@ Exercise 14: Accessing within nested arrays
 Complete Exercise 14 in the space below:
 */
 
-const num=numArrays[2][1];
+for (i=0;i<numArrays.length;i++){if(numArrays[i].indexOf(66)!==-1){num=numArrays[i][numArrays[i].indexOf(66)];}}
+
+
+
+//const num=numArrays[2][1];
 
 
 console.log('Exercise 14 result:', num);
