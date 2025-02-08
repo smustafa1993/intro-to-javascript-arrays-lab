@@ -38,7 +38,7 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
-foods.unshift('tacos');
+foods.unshift('taco');
 
 
 console.log('Exercise 3 result:', foods);
@@ -56,7 +56,7 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 
-let favFood=foods[1];
+let favFood=foods[foods.indexOf('pizza')];
 
 
 
@@ -87,7 +87,7 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
-foods.splice(1,1,'cupcake');
+foods.splice(1,1,'sushi','cupcake');
 
 console.log('Exercise 6 result:', foods);
 
@@ -104,9 +104,10 @@ Exercise 7: Using the `slice()` method
 
 Complete Exercise 7 in the space below:
 */
-
-const yummy=foods.slice(foods.indexOf('cupcake'));
-yummy.unshift('sushi');
+const ind=foods.indexOf('sushi');
+const ind2=foods.indexOf('cupcake')+1;
+const yummy=foods.slice(ind,ind2);
+//yummy.unshift('sushi');
 
 
 console.log('Exercise 7 result:', yummy);
@@ -303,4 +304,3 @@ for(let i=0;i<numArrays.length;i++){
    }
 }
 console.log('Exercise 15 result:\n', total);
-
